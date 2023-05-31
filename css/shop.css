@@ -1,0 +1,660 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40PX;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.search input {
+    border: none;
+    font-size: 15px;
+    margin-left: 8px;
+    padding: 10px;
+}
+
+.search input:focus {
+    outline: none;
+
+
+}
+
+.logo {
+    border: 2px solid gray;
+    padding: 7px;
+    margin-right: 90px;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: gray;
+}
+
+.icon a :hover {
+    color: black;
+}
+
+.icon i {
+    margin: 10px;
+
+}
+
+.cart {
+    position: relative;
+}
+
+.shopping-num {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: rgb(79, 79, 212);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+header {
+    padding-top: 20px;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.nav-links a {
+    color: grey;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: #7971ea;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.home {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+
+
+.dropdown li {
+    padding: 7px 3px;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: white;
+
+}
+
+.dropdown li a:hover {
+    color: #7971ea;
+}
+
+.home:hover .dropdown {
+    display: block;
+}
+
+/* about */
+.about {
+    position: relative;
+}
+
+.about:hover .dropdown {
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 30px 0px 30px 170px;
+}
+
+.nav-menu a {
+    color: #7971ea;
+    padding-right: 8px;
+}
+
+/* End Nav */
+
+.categorie {
+    border: 1px solid black;
+}
+
+.site-contaner .categorie {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 30px 0px 30px 150px;
+}
+
+.categorie li {
+    padding: 15px;
+}
+
+h3 {
+    padding: 15px;
+}
+
+.categorie li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* End Categorie */
+.advanced {
+    border: 1px solid black;
+}
+
+.site-contaner .advanced {
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    margin: 30px 0px 30px 150px;
+    padding: 15px;
+}
+
+.Price-range h4 {
+    padding-bottom: 15px;
+}
+
+.size {
+    padding-top: 10px;
+}
+
+.size h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.size-price input {
+    margin-bottom: 15px;
+}
+
+.color div {
+    padding: 10px 0px 10px 0px;
+}
+
+/* End Aside */
+.site-contaner {
+    display: flex;
+    width: 1000px;
+}
+
+/* .main-site {
+    width: 1100px;
+    padding: 25px 0px 0px 0px;
+} */
+
+
+.Head-site {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+/* --------------- */
+
+.btn-menu {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+}
+
+.btn-menu button {
+    border: none;
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-menu:hover button {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.281);
+    transform: scale(1.1);
+}
+
+.btn-menu div {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn-menu:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-menu div a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    transition: .1s;
+    white-space: nowrap;
+}
+
+.btn-menu div a:hover {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+/* ------------ */
+.btn-menu1 {
+    display: inline-block;
+    position: relative;
+}
+
+.btn-menu1 button {
+    border: none;
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-menu1:hover button {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.281);
+    transform: scale(1.1);
+}
+
+.btn-menu1 div {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn-menu1:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-menu1 div a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    transition: .1s;
+    white-space: nowrap;
+}
+
+.btn-menu1 div a:hover {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+/* ------------ */
+.items1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 20px 50px;
+}
+
+.items1 .Product {
+    background-color: white;
+    width: 330px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+
+}
+
+.items1 img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.items1 .Product p {
+    margin: 10px;
+    color: gray;
+}
+
+.items1 .Product a {
+    color: #8881EC;
+}
+
+.Product span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7971ea;
+}
+
+/* -------------- */
+.page-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+
+
+.page-num p {
+    padding: 8px 30px 30px 20px;
+    margin: 5px;
+    border: 2px solid #7971ea;
+    border-radius: 50%;
+    height: 45px;
+    width: 30px;
+    align-items: center;
+    font-size: 25px;
+}
+
+/* ---------------- */
+.sec4 {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.sec4 h1 {
+    font-size: xx-large;
+
+
+}
+
+.sec4 h2 {
+    text-align: center;
+    align-items: center;
+    color: #7971ea;
+}
+
+
+/* End Sec4 */
+.sec-cover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    margin: 10px;
+    padding: 0px 0px 30px 0px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid gray;
+
+
+}
+
+
+.pru1 {
+    width: 400px;
+    height: 450px;
+    padding: 40px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.425) url(../img/women.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: 20px;
+
+}
+
+.pru2 {
+    width: 400px;
+    height: 450px;
+    padding: 40px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5) url(../img/children.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: 20px;
+}
+
+.pru3 {
+    width: 400px;
+    height: 450px;
+    padding: 40px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3) url(../img/men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+
+.pru1:hover {
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+    box-sizing: border-box;
+
+
+
+}
+
+.pru2:hover {
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    transform: scale(1.1, 1.1);
+    box-sizing: border-box;
+}
+
+.pru3:hover {
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    transform: scale(1.1, 1.1);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.pru1 h3 {
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 8px;
+    font-size: 45px;
+    color: white;
+}
+
+.pru2 h3 {
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 8px;
+    font-size: 45px;
+    color: white;
+}
+
+.pru3 h3 {
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 8px;
+    font-size: 45px;
+    color: white;
+}
+
+.pru1 p {
+    position: absolute;
+    z-index: 2;
+    top: 390px;
+    left: 20px;
+    color: white;
+}
+
+.pru2 p {
+    position: absolute;
+    z-index: 2;
+    top: 390px;
+    left: 20px;
+    color: white;
+}
+
+.pru3 p {
+    position: absolute;
+    z-index: 2;
+    top: 390px;
+    left: 20px;
+    color: white;
+}
+
+/* End sec-cover*/
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0px 80px 150px;
+}
+
+.footer i {
+    color: #7971ea;
+    margin-right: 10px;
+}
+
+.footer a {
+    padding: 10px;
+}
+
+.footer p {
+    padding: 10px;
+}
+
+.footer h3 {
+    padding: 10px;
+}
+
+.foot1 {
+    display: flex;
+}
+
+.foot2 {
+    display: block;
+    width: 100%;
+}
+
+.foot1 a {
+    display: block;
+    color: #7971ea;
+}
+
+.send-box {
+    margin: 30px 0px 20px 0px;
+    position: absolute;
+}
+
+.send-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.send-box input {
+    height: 50px;
+    width: 210px;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.send-box button {
+    height: 40px;
+    width: 70px;
+    border: none;
+    background-color: #7971ea;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 37px;
+    z-index: 2;
+}
+
+.send-box button:hover {
+    box-shadow: inset 3px 3px 40px 10px rgba(0, 0, 0, 0.247);
+    transition: .4s all ease-in-out;
+    background-color: #7971ea;
+}
+
+/* end sec6 Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+    color: gray;
+}
+
+footer a {
+    color: #7971ea;
+}

@@ -1,0 +1,595 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40PX;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.search input {
+    border: none;
+    font-size: 15px;
+    margin-left: 8px;
+    padding: 10px;
+}
+
+.search input:focus {
+    outline: none;
+
+
+}
+
+.logo {
+    border: 2px solid gray;
+    padding: 7px;
+    margin-right: 90px;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: gray;
+}
+
+.icon a :hover {
+    color: black;
+}
+
+.icon i {
+    margin: 10px;
+
+}
+
+.cart {
+    position: relative;
+}
+
+.shopping-num {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: rgb(79, 79, 212);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+header {
+    padding-top: 20px;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.nav-links a {
+    color: grey;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: #7971ea;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.home {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+
+
+.dropdown li {
+    padding: 7px 3px;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: white;
+
+}
+
+.dropdown li a:hover {
+    color: #7971ea;
+}
+
+.home:hover .dropdown {
+    display: block;
+}
+
+/* about */
+.about {
+    position: relative;
+}
+
+.about:hover .dropdown {
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 30px 0px 30px 170px;
+}
+
+.nav-menu a {
+    color: #7971ea;
+    padding-right: 8px;
+}
+
+/* End Nav */
+.sec1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px 80px 150px;
+    height: 800px;
+}
+
+.sec1 img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+.sec1 h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.sec1 a {
+    color: #7971ea;
+}
+
+.sec1 p {
+    font-size: 17px;
+    line-height: 35px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sec1 span {
+    font-size: 25px;
+    color: #7971ea;
+}
+
+.sale-cont {
+    width: 470px;
+    margin-left: 30px;
+    margin-top: 140px;
+}
+
+.sec1 .size-radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: -25px;
+    margin-top: 15px;
+}
+
+/* ------------------- */
+.ctrl {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.ctrl-counter {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    color: #333C48;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #7971ea88;
+}
+
+.ctrl-counter.is-input .ctrl-counter-num {
+    visability: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+
+.ctrl-counter.is-input .ctrl-counter-input {
+    visability: visible;
+    opacity: 1;
+    -webkit-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+
+.ctrl-counter-input {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    color: #333C48;
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+    visability: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+
+.ctrl-counter-num {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 50px;
+    visability: visible;
+    opacity: 1;
+    -webkit-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+}
+
+.ctrl-counter-num.is-increment-hide {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-animation: increment-prev 100ms ease-in;
+    animation: increment-prev 100ms ease-in;
+}
+
+.ctrl-counter-num.is-increment-visible {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation: increment-next 100ms ease-out;
+    animation: increment-next 100ms ease-out;
+}
+
+.ctrl-counter-num.is-decrement-hide {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-animation: decrement-prev 100ms ease-in;
+    animation: decrement-prev 100ms ease-in;
+}
+
+.ctrl-counter-num.is-decrement-visible {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation: decrement-next 100ms ease-out;
+    animation: decrement-next 100ms ease-out;
+}
+
+.ctrl-button {
+    width: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #7971ea;
+    background-color: white;
+    border: 1px solid #7971ea;
+    cursor: pointer;
+    -webkit-transition: background-color 100ms ease-in;
+    transition: background-color 100ms ease-in;
+}
+
+.ctrl-button:hover {
+    background-color: #7971ea;
+    color: white;
+    -webkit-transition: background-color 100ms ease-in;
+    transition: background-color 100ms ease-in;
+}
+
+.ctrl-button:active {
+    background-color: #778996;
+    -webkit-transition: background-color 100ms ease-in;
+    transition: background-color 100ms ease-in;
+}
+
+.ctrl-button-decrement {
+    border-radius: 5px 0 0 5px;
+}
+
+.ctrl-button-increment {
+    border-radius: 0 5px 5px 0;
+}
+
+@-webkit-keyframes decrement-prev {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes decrement-prev {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes decrement-next {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes decrement-next {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+}
+
+@-webkit-keyframes increment-prev {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes increment-prev {
+    from {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes increment-next {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+}
+
+@keyframes increment-next {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+}
+
+/* ----------------- */
+.sec1 .sale-cont button {
+    border: none;
+    padding: 12px;
+    margin: 50px 0px 0px 0px;
+    background-color: #7971ea;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+.sec1 .sale-cont button a{
+    color: white;
+}
+
+.sec1 .sale-cont button:hover {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.281);
+    transition: .4s all ease-in-out;
+    transform: scale(1.1);
+}
+
+/* End sec1 */
+.sec2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-color: #F8F9FA;
+    padding-top: 70px;
+}
+
+.sec2 h1 {
+    font-size: xx-large;
+
+
+}
+
+.sec2 h2 {
+    text-align: center;
+    align-items: center;
+    color: #7971ea;
+}
+
+/* End Sec2 */
+.sec3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F9FA;
+    padding: 0px 200px 80px 200px;
+}
+
+.sec3 .Product {
+    background-color: white;
+    width: 330px;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.sec3 img {
+    width: 330px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.sec3 .Product p {
+    margin: 10px;
+    color: gray;
+}
+
+.sec3 .Product a {
+    color: #8881EC;
+}
+
+.Product span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7971ea;
+}
+
+/* End Sec3 */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0px 80px 150px;
+}
+
+.footer i {
+    color: #7971ea;
+    margin-right: 10px;
+}
+
+.footer a {
+    padding: 10px;
+}
+
+.footer p {
+    padding: 10px;
+}
+
+.footer h3 {
+    padding: 10px;
+}
+
+.foot1 {
+    display: flex;
+}
+
+.foot2 {
+    display: block;
+    width: 100%;
+}
+
+.foot1 a {
+    display: block;
+    color: #7971ea;
+}
+
+.send-box {
+    margin: 30px 0px 20px 0px;
+    position: absolute;
+}
+
+.send-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.send-box input {
+    height: 50px;
+    width: 210px;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.send-box button {
+    height: 40px;
+    width: 70px;
+    border: none;
+    background-color: #7971ea;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 37px;
+    z-index: 2;
+}
+
+.send-box button:hover {
+    box-shadow: inset 3px 3px 40px 10px rgba(0, 0, 0, 0.247);
+    transition: .4s all ease-in-out;
+    background-color: #7971ea;
+}
+
+/* end sec6 Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+    color: gray;
+}
+
+footer a {
+    color: #7971ea;
+}

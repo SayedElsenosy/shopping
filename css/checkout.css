@@ -1,0 +1,509 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40PX;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.search input {
+    border: none;
+    font-size: 15px;
+    margin-left: 8px;
+    padding: 10px;
+}
+
+.search input:focus {
+    outline: none;
+
+
+}
+
+.logo {
+    border: 2px solid gray;
+    padding: 7px;
+    margin-right: 90px;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: gray;
+}
+
+.icon a :hover {
+    color: black;
+}
+
+.icon i {
+    margin: 10px;
+
+}
+
+.cart {
+    position: relative;
+}
+
+.shopping-num {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: rgb(79, 79, 212);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+header {
+    padding-top: 20px;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.nav-links a {
+    color: grey;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: #7971ea;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.home {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(255, 255, 255);
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+
+
+.dropdown li {
+    padding: 7px 3px;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: white;
+
+}
+
+.dropdown li a:hover {
+    color: #7971ea;
+}
+
+.home:hover .dropdown {
+    display: block;
+}
+
+/* about */
+.about {
+    position: relative;
+}
+
+.about:hover .dropdown {
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 30px 0px 30px 170px;
+}
+
+.nav-menu a {
+    color: #7971ea;
+    padding-right: 8px;
+}
+
+/* End Nav */
+.click {
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    padding: 30px;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+/* End Click */
+.main {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    margin: 50px 30px 50px 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.466);
+    padding-bottom: 90px;
+
+}
+
+.main form {
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    padding: 40px 60px 40px 90px;
+}
+
+.main label {
+    margin: 10px 0px;
+
+}
+
+.main input {
+    border: 1px solid rgba(128, 128, 128, 0.466);
+}
+
+.main h2 {
+    margin: 20px 0px;
+}
+
+form .country select {
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+
+}
+
+.country label:after {
+    content: "*";
+    color: red;
+}
+
+form .country label {
+    color: gray;
+    display: block;
+}
+
+.name {
+    display: flex;
+}
+
+.name label:after {
+    content: "*";
+    color: red;
+}
+
+.name input {
+    width: 180px;
+    height: 40px;
+    margin: 10px 40px 0px 0px;
+}
+
+.name label {
+    display: block;
+}
+
+.company label {
+    display: block;
+}
+
+.company input {
+    width: 400px;
+    height: 40px;
+}
+
+.address label {
+    display: block;
+}
+
+.address label:after {
+    content: "*";
+    color: red;
+}
+
+.address input {
+    width: 400px;
+    height: 40px;
+    display: block;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.state {
+    display: flex;
+}
+
+.state label:after {
+    content: "*";
+    color: red;
+}
+
+.state input {
+    width: 180px;
+    height: 40px;
+    margin: 10px 40px 0px 0px;
+}
+
+.state label {
+    display: block;
+}
+
+.phone {
+    display: flex;
+}
+
+.phone label:after {
+    content: "*";
+    color: red;
+}
+
+.phone input {
+    width: 180px;
+    height: 40px;
+    margin: 10px 40px 0px 0px;
+    padding: 10px;
+}
+
+.phone label {
+    display: block;
+}
+
+.checkbox input {
+    margin: 10px 0px 0px 0px;
+}
+
+.main .area {
+    margin: 30px 0px 10px 0px;
+}
+
+.area textarea {
+    margin-top: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    padding: 10px;
+    font-size: 15px;
+    height: auto;
+}
+
+/* End Left Form */
+.coupon-form {
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    padding: 40px 140px;
+}
+
+.coupon-form p {
+    padding: 15px 0px;
+}
+
+.coupon-form input {
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+}
+
+.coupon-form button {
+    padding: 12px 15px 12px 15px;
+    border: none;
+    background-color: #7971ea;
+    color: white;
+}
+
+.coupon-form button:hover {
+    transition: .4s all ease-in-out;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.281);
+    transform: scale(1.1);
+}
+
+.pay-contener {
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    padding-bottom: 50px;
+}
+
+.order table {
+    width: 100%;
+    padding: 30px;
+
+}
+
+.order table tr {}
+
+.order table td {
+    padding: 25px;
+    margin: 250px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.order .bb {
+    font-weight: bold;
+
+}
+
+.pay h3 {
+    height: 40px;
+    width: 400px;
+    border: 1px solid rgba(128, 128, 128, 0.39);
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.pay a {
+    color: #7971ea;
+    padding: 10px;
+}
+
+.done {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.done button {
+    padding: 20px 105px 20px 105px;
+    border: none;
+    background-color: #7971ea;
+}
+
+.done button a {
+    color: white;
+
+}
+
+.done button:hover {
+    transition: .4s all ease-in-out;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.281);
+    transform: scale(1.05);
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0px 80px 150px;
+}
+
+.footer i {
+    color: #7971ea;
+    margin-right: 10px;
+}
+
+.footer a {
+    padding: 10px;
+}
+
+.footer p {
+    padding: 10px;
+}
+
+.footer h3 {
+    padding: 10px;
+}
+
+.foot1 {
+    display: flex;
+}
+
+.foot2 {
+    display: block;
+    width: 100%;
+}
+
+.foot1 a {
+    display: block;
+    color: #7971ea;
+}
+
+.send-box {
+    margin: 30px 0px 20px 0px;
+    position: absolute;
+}
+
+.send-box h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.send-box input {
+    height: 50px;
+    width: 210px;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.send-box button {
+    height: 40px;
+    width: 70px;
+    border: none;
+    background-color: #7971ea;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 37px;
+    z-index: 2;
+}
+
+.send-box button:hover {
+    transition: .4s all ease-in-out;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.281);
+    transform: scale(1.1);
+}
+
+/* end sec6 Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 20px;
+    color: gray;
+}
+
+footer a {
+    color: #7971ea;
+}
